@@ -1,0 +1,42 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "kill": "taskkill /f /im node.exe",
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "bundle:widget": "rollup --config rollup.config.mjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "vite": "^3.0.9",
+    "vite-plugin-solid": "^2.3.0"
+  },
+  "dependencies": {
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@wharfkit/session": "^1.1.1",
+    "@wharfkit/wallet-plugin-anchor": "^1.1.0",
+    "@wharfkit/wallet-plugin-cloudwallet": "^1.1.0",
+    "@wharfkit/web-renderer": "^1.1.1",
+    "babel-preset-solid": "^1.6.3",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "solid-element": "^1.6.3",
+    "solid-js": "^1.6.5",
+    "solid-start": "^0.3.10",
+    "tailwind": "^4.0.0"
+  }
+}
