@@ -1,6 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
-import { terser } from '@rollup/plugin-terser'
+import terser from '@rollup/plugin-terser'
 import babel from '@rollup/plugin-babel';
 import postcss from 'rollup-plugin-postcss';
 import autoprefixer from 'autoprefixer';
