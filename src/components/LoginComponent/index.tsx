@@ -1,9 +1,5 @@
-import { createSignal } from 'solid-js';
-import { createEffect,  } from "solid-js";
 import Avatar from "../Avatar";
-import './dropdown.styles.css';
-import { gsap } from "gsap";
-import './login.styles.css';
+import './LoginComponent.css';
 
 const LoginComponent = (props:any) => {
   const {data , actor, logout, login } = props;

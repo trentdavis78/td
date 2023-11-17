@@ -4,8 +4,9 @@ import { WebRenderer } from '@wharfkit/web-renderer';
 import { WalletPluginAnchor } from '@wharfkit/wallet-plugin-anchor';
 import { WalletPluginCloudWallet } from '@wharfkit/wallet-plugin-cloudwallet';
 import LoginComponent from './components/LoginComponent';
-import './index.css';
-import './App.module.css'
+import './input.css';
+import './output.css';
+ 
 const App = (props) => {
     console.log(props)
     const [session, setSession] = createSignal(null);
