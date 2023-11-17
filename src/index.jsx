@@ -1,10 +1,15 @@
 import { render } from 'solid-js/web'; 
-// import events from './components/data.json'
- 
 import App from './App';
 import { registerWebComponents } from '../register';
-// add some global styles here
 import './index.css';
+
 registerWebComponents();
 
-render(() => <App providers={[]} />, document.getElementById('root'));
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('root');
+  if (root) {
+    render(() => <App providers={[]} />, root);
+  } else {
+    console.error('Root element not found');
+  }
+});
