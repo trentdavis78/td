@@ -1,34 +1,28 @@
- ul {
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   transition-duration: 300ms;
-   transition-duration: 200ms;
-   background: #0f172a;
- }
-
+ 
  .login_container {
-   display: flex;
-   position: absolute;
-   top: 0;
-   right: 0;
-   padding-left: 0.5rem;
-   padding-right: 0.5rem;
-   margin-left: 0.5rem;
-   margin-right: 0.5rem;
-   flex-direction: row;
-   align-items: center;
-   border-radius: 0.375rem;
-   width: 3rem;
-   height: 3rem;
-   max-height: 3rem;
-   left: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0.375rem;
+  width: 3rem;
+  height: 3rem;
+  max-height: 3rem;
+  left: 100%;
  }
 
- .menu-container {
+ .menu_container {
    visibility: hidden;
    opacity: 0;
  }
 
- .menu-container.active {
+ .menu_container.active {
    visibility: visible;
    opacity: 1;
    transition: all 0.2s ease-in-out;
@@ -44,7 +38,7 @@ width: 100%;
 cursor: pointer; 
  }
 
- .user-menu {
+ .user_menu {
    position: absolute;
    right: -0px;
    top: 34px;
@@ -68,14 +62,14 @@ cursor: pointer;
   width: 100%; 
   cursor: pointer; 
  }
- .user-menu .profile-highlight {
+ .user_menu .profile_highlight {
    display: flex;
    border-bottom: 1px solid #6b6e69;
    padding: 12px 16px;
    margin-bottom: 6px;
  }
 
- .user-menu .profile-highlight img {
+ .user_menu .profile_highlight img {
    width: 48px;
    height: 48px;
    border-radius: 25px;
@@ -83,34 +77,34 @@ cursor: pointer;
    object-fit: cover;
  }
 
- .user-menu .profile-highlight .details {
+ .user_menu .profile_highlight .details {
    display: flex;
    flex-direction: column;
    margin: auto 12px;
  }
 
- .user-menu .profile-highlight .details #profile-name {
+ .user_menu .profile_highlight .details #profile_name {
    font-weight: 600;
    font-size: 16px;
  }
 
- .user-menu .profile-highlight .details #profile-footer {
+ .user_menu .profile_highlight .details #profile-footer {
    font-weight: 300;
    font-size: 14px;
    margin-top: 4px;
  }
 
- .user-menu .footer {
+ .user_menu .footer {
 
    padding-top: 6px;
    margin-top: 6px;
  }
 
- .user-menu .footer .user-menu-link {
+ .user_menu .footer .user_menu-link {
    font-size: 13px;
  }
 
- .user-menu .user-menu-link {
+ .user_menu .user_menu-link {
    display: flex;
    text-decoration: none;
    font-weight: 400;
@@ -118,11 +112,11 @@ cursor: pointer;
    padding: 12px 16px;
  }
 
- .user-menu .user-menu-link div {
+ .user_menu .user_menu-link div {
    margin: auto 10px;
  }
 
- .user-menu:before {
+ .user_menu:before {
    position: absolute;
    top: -16px;
    left: 212px;
@@ -132,7 +126,7 @@ cursor: pointer;
    border-bottom-color: #1a2642;
  }
 
- .user-menu:after {
+ .user_menu:after {
    position: absolute;
    top: -14px;
    left: 212px;
