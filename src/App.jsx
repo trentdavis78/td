@@ -4,6 +4,7 @@ import { WebRenderer } from '@wharfkit/web-renderer';
 import { WalletPluginAnchor } from '@wharfkit/wallet-plugin-anchor';
 import { WalletPluginCloudWallet } from '@wharfkit/wallet-plugin-cloudwallet';
 import LoginComponent from './components/LoginComponent';
+import './index.css'; 
 const App = (props) => {
     console.log(props)
     const [session, setSession] = createSignal(null);
@@ -66,15 +67,10 @@ const App = (props) => {
       
     });
  
-    return (<div class="w-[88%] h-[88%] ">
-        <div class=" h-12  mt-4 mr-4 absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/4 transform" > 
+    return (<div class="main_container">
+     
         <LoginComponent data={sessionStorage()} actor={sessionStorage() ? sessionStorage().actor : null} logout={logout} login={login} /> 
-        {/* <h1>Login</h1>
-            <button className="bg-blue-500 w-64 h-24" onClick={login}>Login</button>
-            <button className="bg-blue-500 w-64 h-24" onClick={logout}>Logout</button>
-            { <div>{sessionStorage().actor}</div> : ''}
-            <div>{session() ?  ''  : 'No Active Session'}</div> */}
-        </div>
+    
          </div>
     );
 };

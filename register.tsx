@@ -9,6 +9,6 @@ export function registerWebComponents() {
 function getInitialProps() {
   return {
     providers: ['wax', 'anchor'],
-    ref: {}
+    actions: []
   };
 }
