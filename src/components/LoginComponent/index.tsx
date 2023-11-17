@@ -1,42 +1,33 @@
+import { createSignal } from 'solid-js';
+import { createEffect,  } from "solid-js";
 import Avatar from "../Avatar";
-import "./login.styles.css";
-
+import './dropdown.styles.css';
+import { gsap } from "gsap";
+import './login.styles.css';
 
 const LoginComponent = (props:any) => {
-  
+  const {data , actor, logout, login } = props;
+ 
 
-
-    return <div class="bg-slate-900 flex flex-row items-center mx-2 px-2 max-h-12 h-12 max-w-12 w-12 absolute top-0  right-0 rounded-md left-[100%] ">
-        <div class="flex">
+    return( <>  
   
-    <a class="mini-photo-wrapper" href="#"> 
-    <Avatar width={32} height={32} />   
-    </a>
-   
-    
-    <div class="menu-container">
-      <ul class="user-menu bg-[#0f172a] text-teal-50/80 transition-all duration-200">
-        <div class="profile-highlight w-full py-1 px-2 m-0 cursor-pointer hover:bg-white/10">
-       
-          <div class="details">
-            <div id="profile-name" onClick={() => props.login()} >{props?.actor ? props.actor : 'Login'}</div>
-           
-          </div>
-        </div>
-       {props?.menuItems?.map((item:any) => {   
-            return  <li class="user-menu__item py-1 px-2 m-0 cursor-pointer hover:bg-white/10">
-            <a class="user-menu-link" href="#">             
-              <div>{item}</div>
-            </a>
-          </li>     
-       })}
-      {props?.actor ?  <div class="footer">
-          <li onClick={() => props?.logout()} class="user-menu__item  w-full py-1 px-2 m-0 cursor-pointer hover:bg-white/10"><a class="user-menu-link" href="#" style="color: #F44336;">Logout</a></li>
-          <li class="user-menu__item py-1 px-2 m-0 cursor-pointer hover:bg-white/10"><a class="user-menu-link" href="#">Settings</a></li>
-        </div>: null}
-      </ul>
-    </div>
-  </div></div>;
+    <nav id="colorNav">
+            <ul> 
+                <li>
+                <div class="bg-slate-900 text-teal-50/80 rounded-md max-h-12 h-12 w-12  flex flex-col items-center justify-center absolute right-0 mx-4 my-2 cursor-pointer">
+                   <Avatar img={props?.img ?? 'locked'} />
+                </div>
+                <ul>
+                    <li><button class="text-teal-50/80 py-3" onClick={props?.actor ? console.log(props?.actor) : login } >{props?.actor ? props?.actor : 'Login'}</button></li>
+                   {props?.actor && <li><button class="text-teal-50/80  py-3 " >Option 1</button></li> }
+                   {props?.actor && <li><button class="text-teal-50/80  py-3" onClick={() => {}} >Option 2</button></li> }
+                     {props?.actor && <li><button class="text-red-500/80  py-3" onClick={!props?.actor ? console.log(props?.actor) : logout } >Logout</button></li> }
+                </ul>
+            </li>
+            </ul>
+        </nav>
+ 
+  </>);
   };
 
 

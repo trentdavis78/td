@@ -11,7 +11,7 @@ import json from '@rollup/plugin-json';
 const extensions = ['.ts', '.tsx','.js','.jsx'];
 
 export default {
-    input: './src/index.jsx',
+    input: './src/index.tsx',
     output: {
         file: 'dist/index.mjs',
         format: 'es',

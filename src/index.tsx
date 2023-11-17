@@ -1,7 +1,7 @@
 import { render } from 'solid-js/web'; 
 import App from './App';
 import { registerWebComponents } from '../register';
-import './index.css';
+ 
 
 registerWebComponents();
 

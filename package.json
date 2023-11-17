@@ -30,6 +30,7 @@
     "@wharfkit/wallet-plugin-cloudwallet": "^1.1.0",
     "@wharfkit/web-renderer": "^1.1.1",
     "babel-preset-solid": "^1.6.3",
+    "gsap": "^3.12.2",
     "rollup": "^2.79.1",
     "rollup-plugin-postcss": "^4.0.2",
     "solid-element": "^1.8.0",
